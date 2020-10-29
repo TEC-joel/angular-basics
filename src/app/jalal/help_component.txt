@@ -1,0 +1,104 @@
+Generates and/or modifies files based on a schematic.
+usage: ng generate component <name> [options]
+
+arguments:
+  schematic
+    The schematic or collection:schematic to generate.
+  name
+    The name of the component.
+
+options:
+  --change-detection (-c)
+    The change detection strategy to use in the new component.
+  --defaults 
+    When true, disables interactive input prompts for options with a default.
+  --display-block (-b)
+    Specifies if the style will contain `:host { display: block; }`.
+  --dry-run (-d)
+    When true, runs through and reports activity without writing out results.
+  --entry-component 
+    When true, the new component is the entry component of the declaring NgModule.
+  --export 
+    When true, the declaring NgModule exports this component.
+  --flat 
+    When true, creates the new files at the top level of the current project.
+  --force (-f)
+    When true, forces overwriting of existing files.
+  --help 
+    Shows a help message for this command in the console.
+  --inline-style (-s)
+    When true, includes styles inline in the component.ts file. Only CSS styles can be included inline. By default, an external styles file is created and referenced in the component.ts file.
+  --inline-template (-t)
+    When true, includes template inline in the component.ts file. By default, an external template file is created and referenced in the component.ts file.
+  --interactive 
+    When false, disables interactive input prompts.
+  --lint-fix 
+    When true, applies lint fixes after generating the component.
+  --module (-m)
+    The declaring NgModule.
+  --prefix (-p)
+    The prefix to apply to the generated component selector.
+  --project 
+    The name of the project.
+  --selector 
+    The HTML selector to use for this component.
+  --skip-import 
+    When true, does not import this component into the owning NgModule.
+  --skip-selector 
+    Specifies if the component should have a selector or not.
+  --skip-tests 
+    When true, does not create "spec.ts" test files for the new component.
+  --style 
+    The file extension or preprocessor to use for style files.
+  --type 
+    Adds a developer-defined type to the filename, in the format "name.type.ts".
+  --view-encapsulation (-v)
+    The view encapsulation strategy to use in the new component.
+
+Help for schematic component
+Creates a new generic component definition in the given or default project.
+arguments:
+  name
+    The name of the component.
+
+options:
+  --change-detection (-c)
+    The change detection strategy to use in the new component.
+  --display-block (-b)
+    Specifies if the style will contain `:host { display: block; }`.
+  --entry-component 
+    When true, the new component is the entry component of the declaring NgModule.
+  --export 
+    When true, the declaring NgModule exports this component.
+  --flat 
+    When true, creates the new files at the top level of the current project.
+  --inline-style (-s)
+    When true, includes styles inline in the component.ts file. Only CSS styles can be included inline. By default, an external styles file is created and referenced in the component.ts file.
+  --inline-template (-t)
+    When true, includes template inline in the component.ts file. By default, an external template file is created and referenced in the component.ts file.
+  --lint-fix 
+    When true, applies lint fixes after generating the component.
+  --module (-m)
+    The declaring NgModule.
+  --prefix (-p)
+    The prefix to apply to the generated component selector.
+  --project 
+    The name of the project.
+  --selector 
+    The HTML selector to use for this component.
+  --skip-import 
+    When true, does not import this component into the owning NgModule.
+  --skip-selector 
+    Specifies if the component should have a selector or not.
+  --skip-tests 
+    When true, does not create "spec.ts" test files for the new component.
+  --style 
+    The file extension or preprocessor to use for style files.
+  --type 
+    Adds a developer-defined type to the filename, in the format "name.type.ts".
+  --view-encapsulation (-v)
+    The view encapsulation strategy to use in the new component.
+
+
+To see help for a schematic run:
+  ng generate <schematic> --help
