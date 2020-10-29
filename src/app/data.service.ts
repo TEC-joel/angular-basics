@@ -5,85 +5,45 @@ import { Injectable } from '@angular/core';
 })
 export class DataService {
 
-  data = [
-    {
-      id: 1,
-      name: "User 01" ,
-      pilotingScore: 10,
-      shootingScore: 20,
-      isForceUser: true,
-    },
-    {
-      id: 2,
-      name: "User 02",
-      pilotingScore: 20,
-      shootingScore: 30,
-      isForceUser: false,
-    },
-    {
-      id: 3,
-      name: "User 03",
-      pilotingScore: 5,
-      shootingScore: 10,
-      isForceUser: false,
-    },
-    {
-      id: 4,
-      name: "User 04",
-      pilotingScore: 5,
-      shootingScore: 5,
-      isForceUser: true,
-    },
-    {
-      id: 5,
-      name: "User 05",
-      pilotingScore: 10,
-      shootingScore: 10,
-      isForceUser: true,
-    },
-  ]
+  db = "assets/data.json"
+  constructor() {}
 
-  constructor() { }
-
-  getData(){
-    return this.data
-   
+  
+  async getData(){
+     let res  = await fetch(this.db)
+     let json = await res.json() 
+     return json
   }
 
-  getCalculation_filter(UserName:string) {
-    return this.data
-    // like SQL Where 
-    // .filter(person => !person.isForceUser)
-     .filter( x => x.name == UserName)
-    // .filter( p => p.id > 2)
-    // .filter( x => x.isForceUser )
-    // .filter(person => person.isForceUser)
-   
+  async getCalculation_filter(UserName:string) {
+    let res  = await fetch(this.db)
+    let json = await res.json() 
+    let data:Array<any> = Array.from(json)
+
+    return data
+          .filter( x => x.name == UserName)
+    
   }
 
 
-  getCalculation_filter_by_id(id:number) {
-      return this.data.filter( p => p.id  == id)
+  async getCalculation_filter_by_id(id:number) {
+
+      let res  = await fetch(this.db)
+      let json = await res.json() 
+      let data:Array<any> = Array.from(json)
+  
+      return data
+            .filter( p => p.id  == id )
   }
 
-  getCalculation() {
-    return  this.data
-      // like SQL Where 
-      // 2 objects
-      //.filter(person => !person.isForceUser)
-      
-      // 3 objects
+  async getCalculation() {
+    let res  = await fetch(this.db)
+    let json = await res.json() 
+    let data:Array<any> = Array.from(json)
+
+    return  data
       .filter(person => person.isForceUser)
-
-      // .filter( x => x.name == 'User 01')
-      // .filter( p => p.id > 2)
-      // .filter( x => x.isForceUser )
-      
-      // like foreach, but return new Array
-      // [30,10,20]
-        .map(x => x.pilotingScore + x.shootingScore )
-      
-      // calculations //60
+      .map(x => x.pilotingScore + x.shootingScore )
       .reduce((x, xx) => x + xx,0)
   }
 

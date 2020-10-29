@@ -1,0 +1,37 @@
+[
+    {
+      "id": 1,
+      "name": "User 01" ,
+      "pilotingScore": 10,
+      "shootingScore": 20,
+      "isForceUser": true
+    },
+    {
+      "id": 2,
+      "name": "User 02",
+      "pilotingScore": 20,
+      "shootingScore": 30,
+      "isForceUser": false
+    },
+    {
+      "id": 3,
+      "name": "User 03",
+      "pilotingScore": 5,
+      "shootingScore": 10,
+      "isForceUser": false
+    },
+    {
+      "id": 4,
+      "name": "User 04",
+      "pilotingScore": 5,
+      "shootingScore": 5,
+      "isForceUser": true
+    },
+    {
+      "id": 5,
+      "name": "User 05",
+      "pilotingScore": 10,
+      "shootingScore": 10,
+      "isForceUser": true
+    }
+  ]
