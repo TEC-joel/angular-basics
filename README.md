@@ -1,11 +1,16 @@
-# Map and Reduce
+# Angular Basics
 
 
 ## How to run
 
 ```powershell
-git clone https://github.com/Jalalhejazi/angular-10-2-0-Map-Reduce.git demoApp
-cd demoApp
+git clone https://github.com/Jalalhejazi/angular-basics.git 
+cd angular-basics
+code .
+
+# Need to install requirements
 npm install --silent
+
+# startup and listen on port 1234
 npm run start
 ```
