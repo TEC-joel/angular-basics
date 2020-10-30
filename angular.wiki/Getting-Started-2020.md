@@ -11,7 +11,7 @@
 
 - For Angular development
   - npm install @angular/cli --global
-  - [Learning Angular](/Getting-Started-2020/Learning-Angular/Angular-Setup)
+   - [learning Angular](Getting-Started-2020/Learning-Angular/Angular-Setup/readme.md)
 
 - Start Building Components
   - Use Basic HTML5 skills
