@@ -1,4 +1,4 @@
-# Map and Reduce and whatever
+# Map and Reduce
 
 
 ## How to run
