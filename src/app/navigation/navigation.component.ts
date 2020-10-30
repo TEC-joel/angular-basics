@@ -3,13 +3,11 @@ import { DataService } from '../data.service'
 
 @Component({
   selector: 'navigation',
-  template: `
-    <h1> Map & Reduce Demo </h1>
-    <pre>{{data | json}}</pre>
-  `
+  templateUrl:'./navigation.component.html'
 })
 export class NavigationComponent {
   
+  selected = false
   data
 
   constructor(private service : DataService) {
@@ -27,6 +25,11 @@ export class NavigationComponent {
     
     // this.data = await this.service.getCalculation()
     
+  }
+
+  okButton( input:any ){
+    this.selected = true
+    console.log(input)
   }
 
    

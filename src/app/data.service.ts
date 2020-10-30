@@ -9,6 +9,10 @@ export class DataService {
   constructor() {}
 
   
+  /* getData_v1(OnSuccess_whatEver){
+     fetch(this.db).then(x => x.json()).then(data => OnSuccess_whatEver(data))
+  }
+ */
   async getData(){
      let res  = await fetch(this.db)
      let json = await res.json() 
