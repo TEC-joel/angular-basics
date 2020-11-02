@@ -1,5 +1,22 @@
 # Angular Basics
 
+# Angular first time
+
+```powershell
+ng new --help
+ng new demoApp  --defaults --minimal --dry-run 
+ng new demoApp  --defaults --minimal
+
+cd demoApp
+npm install --silent
+
+# discover command
+npm run 
+
+# start up command
+npm run start
+```
+
 
 ## How to run
 
