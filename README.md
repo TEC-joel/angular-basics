@@ -3,6 +3,11 @@
 # Angular first time
 
 ```powershell
+# install angular cli package
+npm install --global @angular/cli
+
+ng 
+
 ng new --help
 ng new demoApp  --defaults --minimal --dry-run 
 ng new demoApp  --defaults --minimal
