@@ -15,7 +15,7 @@ ng new demoApp  --defaults --minimal
 cd demoApp
 npm install --silent
 
-# discover command
+# discovery command
 npm run 
 
 # start up command
