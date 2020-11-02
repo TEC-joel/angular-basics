@@ -13,6 +13,10 @@ ng new demoApp  --defaults --minimal --dry-run
 ng new demoApp  --defaults --minimal
 
 cd demoApp
+
+# edit with vscode
+code .
+
 npm install --silent
 
 # discovery command
