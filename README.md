@@ -102,13 +102,17 @@ npm run docker-run
 ## Tester & QE 
 
 ```powershell
-# show your tester how to call PowerShell functions
+# show your tester how to call PowerShell functions and how to start the app
 
-function angular-basics-test{
-  docker container rm $(docker container ls -aq) -f
+function container-kill-all {
+    docker container rm $(docker container ls -aq) -f
+    docker image rm $(docker image ls -aq) -f  
+}
+function angular-basics-run{
+  container-kill-all
   docker container run -d -p 2222:80/tcp jalalhejazi/angular-basics-2020:latest
   chrome http://localhost:2222/
 }
 
-angular-basics-test
+angular-basics-run
 ```
