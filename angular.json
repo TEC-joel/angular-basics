@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "DemoApp": {
+    "AngularBasics": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -41,7 +41,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/DemoApp",
+            "outputPath": "dist/AngularBasics",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -90,21 +90,21 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "DemoApp:build"
+            "browserTarget": "AngularBasics:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "DemoApp:build:production"
+              "browserTarget": "AngularBasics:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "DemoApp:build"
+            "browserTarget": "AngularBasics:build"
           }
         }
       }
     }},
-  "defaultProject": "DemoApp"
+  "defaultProject": "AngularBasics"
 }

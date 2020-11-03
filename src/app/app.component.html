@@ -1,12 +1,9 @@
 <div class="topnav">
-    <a href="/">Home</a>
-    <a href="/product">Get Data</a>
-    <a href="/contact">Contact</a>
-    <a href="/about">About</a>
-
-    <a  class="active" href="/weather">City Weather</a>
-
+    <a routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" routerLink="/">Home</a>
+    <a routerLinkActive="active" routerLink="/product">Get Data</a>
+    <a routerLinkActive="active" routerLink="/contact">Contact</a>
+    <a routerLinkActive="active" routerLink="/about">About</a>
+    <a routerLinkActive="active" routerLink="/weather">City Weather</a>
 </div>
-
 
 <router-outlet></router-outlet>

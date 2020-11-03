@@ -87,13 +87,6 @@ ng generate service --help
 
 ## How to Build and Deploy
 
-Best Practice is to use Dockerfile
+Best Practice is to use [Dockerfile](dockerfile)
 
-```bash
-FROM nginx:alpine
-LABEL maintainer Jalal Hejazi <jalal.hejazi@gmail.com>
 
-COPY dist/demo-app /usr/share/nginx/html
-
-EXPOSE 80
-```  
