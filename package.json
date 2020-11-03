@@ -9,9 +9,9 @@
     "lint": "ng lint",
     "predocker-build": "npm run build",
     "docker-build": "docker build --tag jalalhejazi/angular-basics-2020 .",
-    "predocker-run":"npm run docker-build",
+    "predocker-run": "npm run docker-build",
     "docker-run": "docker container run -d -p 1111:80/tcp jalalhejazi/angular-basics-2020:latest",
-    "predeploy":"npm run docker-build",
+    "predeploy": "npm run docker-build",
     "deploy": "docker push jalalhejazi/angular-basics-2020:latest "
   },
   "private": true,
@@ -26,6 +26,7 @@
     "@angular/router": "~10.2.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
+    "uuid": "^7.0.3",
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
