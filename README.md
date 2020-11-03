@@ -68,9 +68,32 @@ git pull
 ## How to generate Component
 
 ```powershell
-ng generate component -d
+ng generate component --help
 ng g c weather -d
 
 # CREATE src/app/weather/weather.component.ts (268 bytes)
 # UPDATE src/app/app.module.ts (766 bytes)
+
 ```
+
+
+
+## How to generate Service
+
+```powershell
+ng generate service --help
+```
+
+
+## How to Build and Deploy
+
+Best Practice is to use Docker
+
+```bash
+FROM nginx:alpine
+LABEL maintainer Jalal Hejazi <jalal.hejazi@gmail.com>
+
+COPY dist/kursusApp /usr/share/nginx/html
+
+EXPOSE 80
+```  
