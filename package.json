@@ -8,9 +8,11 @@
     "test": "ng test",
     "lint": "ng lint",
     "predocker-build": "npm run build",
-    "docker-build": "docker build --tag angular-basics-2020 .",
+    "docker-build": "docker build --tag jalalhejazi/angular-basics-2020 .",
     "predocker-run":"npm run docker-build",
-    "docker-run": "docker container run -d -p 1111:80/tcp angular-basics-2020:latest"
+    "docker-run": "docker container run -d -p 1111:80/tcp jalalhejazi/angular-basics-2020:latest",
+    "predeploy":"npm run docker-build",
+    "deploy": "docker push jalalhejazi/angular-basics-2020:latest "
   },
   "private": true,
   "dependencies": {

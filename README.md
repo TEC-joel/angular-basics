@@ -97,3 +97,10 @@ docker container rm $(docker container ls -aq) -f
 # http://localhost:1111
 npm run docker-run
 ```
+
+
+## Tester & QE
+
+```powershell
+docker container run -d -p 2222:80/tcp jalalhejazi/angular-basics-2020:latest
+```
