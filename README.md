@@ -31,6 +31,9 @@ npm run start
 - https://stackblitz.com/edit/angular-qna
 - https://angular-qna.stackblitz.io/
 - https://angular-qna.stackblitz.io/question/2
+- https://stackblitz.com/edit/angular-registration-login-form
+
+Get inspiration:
 - [Follow Me](https://stackblitz.com/@Jalalhejazi)
 
 
