@@ -96,6 +96,9 @@ docker container rm $(docker container ls -aq) -f
 # build and run docker container
 # http://localhost:1111
 npm run docker-run
+
+# How to deploy to dockerHub or any dockerRegistry (on-premise)
+npm run deploy
 ```
 
 
@@ -105,8 +108,8 @@ npm run docker-run
 # show your tester how to call PowerShell functions and how to start the app
 
 function container-kill-all {
-    docker container rm $(docker container ls -aq) -f
-    docker image rm $(docker image ls -aq) -f  
+   docker container rm $(docker container ls -aq) -f
+   docker image rm $(docker image ls -aq) -f  
 }
 function angular-basics-run{
   container-kill-all
