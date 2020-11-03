@@ -27,7 +27,7 @@ npm run start
 ```
 
 
-## How to run
+## How to Clone first time
 
 ```powershell
 git clone https://github.com/Jalalhejazi/angular-basics.git 
@@ -40,6 +40,17 @@ npm install --silent
 # startup and listen on port 1234
 npm run start
 ```
+
+
+## How to get latest version 
+
+```powershell
+cd angular-basics
+
+git stash
+git pull 
+```
+
 
 
 ## How to generate Component
