@@ -61,13 +61,6 @@ cd angular-basics
 
 git stash
 git pull
-
-# remove all running docker containers
-docker container rm $(docker container ls -aq) -f
-
-# build and run docker container
-# http://localhost:1111
-npm run docker-run
 ```
 
 
@@ -96,4 +89,11 @@ ng generate service --help
 
 Best Practice is to use [Dockerfile](dockerfile)
 
+```powershell
+# remove all running docker containers
+docker container rm $(docker container ls -aq) -f
 
+# build and run docker container
+# http://localhost:1111
+npm run docker-run
+```
