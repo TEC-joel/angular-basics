@@ -35,6 +35,13 @@
       "isForceUser": false
     },
     {
+      "id": 2,
+      "name": "User 02",
+      "pilotingScore": 20,
+      "shootingScore": 30,
+      "isForceUser": false
+    },
+    {
       "id": 3,
       "name": "User 03",
       "pilotingScore": 5,
