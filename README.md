@@ -66,6 +66,7 @@ git pull
 docker container rm $(docker container ls -aq) -f
 
 # build and run docker container
+# http://localhost:1111
 npm run docker-run
 ```
 
