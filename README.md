@@ -1,6 +1,10 @@
 # Angular Basics
 
-# Angular first time
+
+[![Build Status](https://dev.azure.com/superusers-kursus/Angular-Basics/_apis/build/status/Jalalhejazi.angular-basics?branchName=master)](https://dev.azure.com/superusers-kursus/Angular-Basics/_build/latest?definitionId=142&branchName=master)
+
+
+## Angular first time
 
 ```powershell
 # install angular cli package
@@ -99,7 +103,7 @@ npm run docker-run
 ```
 
 
-## Tester & QE 
+## Tester & QA
 
 ```powershell
 # show your tester how to call PowerShell functions and how to start the app
