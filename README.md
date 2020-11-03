@@ -120,3 +120,16 @@ function angular-basics-run{
 
 angular-basics-run
 ```
+
+
+## Deploy using DevOps automation
+
+- When Deployment is automated, then 95% of your time goes to development and research 
+- No waste time on conflicts
+- No more "It works on my machine"
+
+<br>
+
+![](src/assets/ci-cd-workflow.png)
+
+<br>
