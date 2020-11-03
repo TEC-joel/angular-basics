@@ -1,4 +1,5 @@
 # dockerId and dockerPassword is coming from Azure Key-Vault Secret Store  
+# If you want to hack me, you need to hack Azure first :-) 
 
 pool:
   vmImage: 'Ubuntu 16.04'
@@ -15,3 +16,5 @@ steps:
     docker push $(dockerId)/$(imageName)
   env:
     pswd: $(dockerPassword)
+
+# webhooks to https://angular-basics-2020.azurewebsites.net
