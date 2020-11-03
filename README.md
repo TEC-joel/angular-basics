@@ -93,7 +93,7 @@ Best Practice is to use Docker
 FROM nginx:alpine
 LABEL maintainer Jalal Hejazi <jalal.hejazi@gmail.com>
 
-COPY dist/kursusApp /usr/share/nginx/html
+COPY dist/demo-app /usr/share/nginx/html
 
 EXPOSE 80
 ```  
