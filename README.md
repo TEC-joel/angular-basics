@@ -60,7 +60,9 @@ npm run start
 cd angular-basics
 
 git stash
-git pull 
+git pull
+
+npm run docker-run
 ```
 
 
