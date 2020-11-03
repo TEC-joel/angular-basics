@@ -8,6 +8,11 @@ variables:
   imageName: 'angular-basics-2020'
 
 steps:
+
+- task: WhiteSource Bolt@20
+  inputs:
+    cwd: ''
+    
 - script: |
     npm install --silent
     npm run build
