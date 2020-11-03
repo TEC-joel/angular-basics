@@ -26,6 +26,11 @@ npm run
 npm run start
 ```
 
+## How to work online
+
+- https://stackblitz.com/edit/angular-qna
+
+
 
 ## How to Clone first time
 
