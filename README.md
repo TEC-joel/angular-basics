@@ -26,9 +26,11 @@ npm run
 npm run start
 ```
 
-## How to work online
+## How to work/edit/run online 
 
 - https://stackblitz.com/edit/angular-qna
+- https://angular-qna.stackblitz.io/
+- https://angular-qna.stackblitz.io/question/2
 
 
 
