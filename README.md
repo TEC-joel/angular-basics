@@ -62,6 +62,10 @@ cd angular-basics
 git stash
 git pull
 
+# remove all running docker containers
+docker container rm $(docker container ls -aq) -f
+
+# build and run docker container
 npm run docker-run
 ```
 
