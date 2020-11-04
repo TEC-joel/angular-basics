@@ -8,43 +8,43 @@ export class DataService {
   db = "assets/data.json"
   constructor() {}
 
-  
-  /* getData_v1(OnSuccess_whatEver){
-     fetch(this.db).then(x => x.json()).then(data => OnSuccess_whatEver(data))
-  }
- */
   async getData(){
      let res  = await fetch(this.db)
      let json = await res.json() 
-     return json
+     
+     // new Set() removes duplicates in array
+     // to remove duplicates in array of id, I use map() and find()
+     const uniqueData = Array.from(new Set(json.map(x => x.id )))
+                       .map(id => json.find(a => a.id === id))
+
+     return uniqueData
   }
 
   async getCalculation_filter(UserName:string) {
-    let res  = await fetch(this.db)
-    let json = await res.json() 
-    let data:Array<any> = Array.from(json)
-
+    let json = await this.getData()
+    let data:Array<any> = Array.from(new Set(json))
     return data
-          .filter( x => x.name == UserName)
-    
+           .filter( x => x.isForceUser )
+               
   }
 
 
   async getCalculation_filter_by_id(id:number) {
+      let data = await this.getData()
 
-      let res  = await fetch(this.db)
-      let json = await res.json() 
-      let data:Array<any> = Array.from(json)
-  
       return data
             .filter( p => p.id  == id )
   }
 
   async getCalculation() {
+   /*  
     let res  = await fetch(this.db)
     let json = await res.json() 
-    let data:Array<any> = Array.from(json)
+    let data:Array<any> = Array.from(json) 
+   */
 
+    let data = await this.getData()
+    
     return  data
       .filter(person => person.isForceUser)
       .map(x => x.pilotingScore + x.shootingScore )

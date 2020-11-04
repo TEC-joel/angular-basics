@@ -15,7 +15,7 @@ export class NavigationComponent {
   }
   
   async getMyData(){
-      this.data = await this.service.getData()
+     this.data = await this.service.getData()
     
     // this.data = await this.service.getCalculation_filter('User 01')
     // this.data = await this.service.getCalculation_filter('User 02')
@@ -26,12 +26,6 @@ export class NavigationComponent {
     // this.data = await this.service.getCalculation()
     
   }
-
-  okButton( input:any ){
-    this.selected = true
-    console.log(input)
-  }
-
    
   
 }
