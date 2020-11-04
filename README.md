@@ -86,6 +86,20 @@ ng g c weather -d
 ```
 
 
+## How to generate Pipes
+
+```powershell
+ng generate pipe --help
+
+```
+
+- https://underscorejs.org/
+- https://lodash.com/
+- https://date-fns.org/
+
+
+
+
 
 ## How to generate Service
 
