@@ -65,6 +65,13 @@ git stash
 git pull
 ```
 
+## How to generate Modules
+
+- admin module
+```powershell
+ng generate module admin --module=app.module --route="admin" --routingScope=Child 
+```
+
 
 
 ## How to generate Component
