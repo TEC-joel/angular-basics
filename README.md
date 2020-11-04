@@ -1,6 +1,10 @@
 # Angular Basics
 
-# Angular first time
+
+[![Build Status](https://dev.azure.com/superusers-kursus/Angular-Basics/_apis/build/status/Jalalhejazi.angular-basics?branchName=master)](https://dev.azure.com/superusers-kursus/Angular-Basics/_build/latest?definitionId=142&branchName=master)
+
+
+## Angular first time
 
 ```powershell
 # install angular cli package
@@ -29,8 +33,6 @@ npm run start
 ## How to work/edit/run online 
 
 - https://stackblitz.com/edit/angular-qna
-- https://angular-qna.stackblitz.io/
-- https://angular-qna.stackblitz.io/question/2
 - https://stackblitz.com/edit/angular-registration-login-form
 
 Get inspiration:
@@ -102,7 +104,7 @@ npm run deploy
 ```
 
 
-## Tester & QE 
+## Tester & QA
 
 ```powershell
 # show your tester how to call PowerShell functions and how to start the app
@@ -119,3 +121,16 @@ function angular-basics-run{
 
 angular-basics-run
 ```
+
+
+## Deploy using DevOps automation
+
+- When Deployment is automated, then 95% of your time goes to development and research 
+- No waste time on conflicts
+- No more "It works on my machine"
+
+<br>
+
+![](src/assets/ci-cd-workflow.png)
+
+<br>
