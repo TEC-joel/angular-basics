@@ -14,30 +14,28 @@ export class DataService {
      
      // new Set() removes duplicates in array
      // to remove duplicates in array of id, I use map() and find()
+     
      const uniqueData = Array.from(new Set(json.map(x => x.id )))
-                       .map(id => json.find(a => a.id === id))
-
+                              .map(id => json.find(a => a.id === id))
+ 
      return uniqueData
   }
 
   async getCalculation_filter(UserName:string) {
-    let json = await this.getData()
-    let data:Array<any> = Array.from(new Set(json))
+    let data = await this.getData()
     return data
-           .filter( x => x.isForceUser )
-               
+            .filter( x => x.name == UserName )
   }
 
 
   async getCalculation_filter_by_id(id:number) {
       let data = await this.getData()
-
       return data
             .filter( p => p.id  == id )
   }
 
   async getCalculation() {
-   /*  
+   /* 
     let res  = await fetch(this.db)
     let json = await res.json() 
     let data:Array<any> = Array.from(json) 
