@@ -4,6 +4,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { WeatherComponent } from './weather/weather.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
   {
@@ -18,7 +19,7 @@ const routes: Routes = [
   {
     path:'weather', component:WeatherComponent
   }
-  // {path:"**", component: PagenotfoundComponent}
+  {path:"**", component:PageNotFoundComponent}
 
 
 ];

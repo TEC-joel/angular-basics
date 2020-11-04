@@ -7,6 +7,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { WeatherComponent } from './weather/weather.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { WeatherComponent } from './weather/weather.component';
     NavigationComponent,
     AboutComponent,
     ContactComponent,
-    WeatherComponent
+    WeatherComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
